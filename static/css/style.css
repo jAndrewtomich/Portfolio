@@ -13,9 +13,9 @@
     --fw-reg: 400;
     --fw-bold: 700;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #f8333c;
+    --clr-light: #a0daa9;
+    --clr-dark: #3b3a30;
+    --clr-accent: #00a170;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -131,6 +131,10 @@ h3 { font-size: var(--fs-h3) }
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
+}
+
+.intro > img {
+    border-radius: 80%;
 }
 
 /* header */

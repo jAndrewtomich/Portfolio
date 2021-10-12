@@ -42,7 +42,7 @@
                 Hi, I am <strong>Andrew Tomich</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="" alt="" class="intro__img">
+            <img src="{{ url_for('static', filename='img/Andrew Tomich.jpg') }}" alt="Andrew's face" class="intro__img">
         </section>
 
 
@@ -91,37 +91,37 @@
             <!-- Portfolio items -->
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="" class="portfolio__item">
+                <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
                     <img src="{{ url_for('static', filename='img/pic1.png') }}" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 02 -->
-                <a href="" class="portfolio__item">
-                    <img src="#" alt="" class="portfolio__img">
+                <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
+                    <img src="{{ url_for('static', filename='img/NFIMDB.png') }}" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 03 -->
-                <a href="" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
+                    <img src="#" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 04 -->
-                <a href="" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
+                    <img src="#" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 05 -->
-                <a href="" class="portfolio__item">
-                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
+                    <img src="#" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 06 -->
-                <a href="" class="portfolio__item">
+                <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
                     <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 07 -->
-                <a href="" class="portfolio__item">
+                <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
                     <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
                 </a>
 

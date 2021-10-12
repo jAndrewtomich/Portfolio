@@ -15,9 +15,9 @@ def main():
     def index():
         return render_template("index.html")
 
-    # @fapp.route("/portfolio-item")
-    # def portfolio_item():
-    #     return render_template("portfolio-item.html")
+    @fapp.route("/portfolio-item")
+    def portfolio_item():
+        return render_template("portfolio-item.html")
 
     fapp.run(host="0.0.0.0", port=5000, debug=True)
 
