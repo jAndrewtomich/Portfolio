@@ -28,9 +28,9 @@
             </button>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="{{ url_for('index') }}" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="{{ url_for('index') }}" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="{{ url_for('index') }}" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                     <li class="nav__item"><a href="{{ url_for('index') }}" class="nav__link">My Work</a></li>
                 </ul>
             </nav>
@@ -39,9 +39,9 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Andrew Tomich</strong>
+                Hi, I'm <strong>Andrew Tomich</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <p class="section__subtitle section__subtitle--intro">Software Developer</p>
             <img src="{{ url_for('static', filename='img/Andrew Tomich.jpg') }}" alt="Andrew's face" class="intro__img">
         </section>
 
@@ -51,17 +51,17 @@
             <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> <!-- / service -->
+
+                <div class="service">
                     <h3>Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> <!-- / service -->
 
                 <div class="service">
                     <h3>Data</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-
-                <div class="service">
-                    <h3>Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div> <!-- / service -->
             </div> <!-- / services -->
@@ -80,7 +80,7 @@
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            </div>
 
-           <img src="" alt="" class="about-me__img">
+           <img src="{{ url_for('static', filename='img/htx1.png') }}" alt="" class="about-me__img">
         </section>
 
         <!-- My Work -->
@@ -92,12 +92,12 @@
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
                 <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
-                    <img src="{{ url_for('static', filename='img/pic1.png') }}" alt="" class="portfolio__img">
+                    <img src="{{ url_for('static', filename='img/flight1.png') }}" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 02 -->
                 <a href="{{ url_for('portfolio_item') }}" class="portfolio__item">
-                    <img src="{{ url_for('static', filename='img/NFIMDB.png') }}" alt="" class="portfolio__img">
+                    <img src="{{ url_for('static', filename='img/NF_IMdb1.png') }}" alt="" class="portfolio__img">
                 </a>
 
                 <!-- Portfolio item 03 -->
