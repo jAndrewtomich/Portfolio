@@ -1,7 +1,26 @@
 {% include "header.html" %}
-	
-	<div class="container-fluid" id="mainContent">
-		<h1>TEH KFU!?</h1>
-	</div>
-
+	<header class="masthead" style="...">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-10 mx-auto">
+					<div class="site-heading">
+						<h1>Andrew's Site</h1>
+						<span class="subheading">A Digital Portfolio</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	{% for _ in range(500) %}
+		<div class="container">
+			<div class="row">
+				<br>
+				<hr>
+				<br>
+				<hr>
+			</div>
+		</div>
+		<hr>
+	{% endfor %}
 {% include "footer.html" %}
