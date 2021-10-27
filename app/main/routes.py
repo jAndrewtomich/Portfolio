@@ -7,3 +7,9 @@ from app.main import bp
 def index():
     return render_template('index.html')
 
+
+@bp.route('/eda')
+def eda():
+    return render_template('eda.html')
+
+

@@ -1,0 +1,24 @@
+/* Project styles */
+
+:link {
+	color: #0000EE;
+}
+
+:visited {
+	color: #551A8B;
+}
+
+/* EDA */
+
+.eda {
+	color: black;
+	margin-top: 3.5em;
+}
+
+.eda img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	height: 50%;
+	width: 50%;
+}
+
