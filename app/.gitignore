@@ -32,5 +32,3 @@ nosetests.xml
 venv
 app.db
 portfolio.log*
-
-instance

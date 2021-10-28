@@ -32,8 +32,3 @@ nosetests.xml
 venv
 app.db
 portfolio.log*
-<<<<<<< HEAD
-
-instance
-=======
->>>>>>> main
