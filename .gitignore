@@ -31,4 +31,5 @@ nosetests.xml
 
 venv
 app.db
-portfolio.log*
+
+logs
