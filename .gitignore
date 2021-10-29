@@ -33,3 +33,4 @@ venv
 app.db
 
 logs
+project_data
