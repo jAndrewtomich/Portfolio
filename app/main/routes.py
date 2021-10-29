@@ -1,5 +1,8 @@
+import os
 from flask import render_template, url_for, current_app
 from app.main import bp
+from app import db
+from app.models import Eda
 
 
 @bp.route('/')
@@ -10,6 +13,7 @@ def index():
 
 @bp.route('/eda')
 def eda():
-    return render_template('eda.html')
+    blocks = Eda.query.all()
+    return render_template('eda.html', blocks=blocks)
 
 

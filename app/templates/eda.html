@@ -13,7 +13,19 @@
                 </div>
         </header>
 	<div class="container eda">
-		{% include "_eda-block.html" %}
+		{% for block in blocks %}
+			<div class="container">
+				<div class="row">
+					<h4>
+						{{ block.text_block }}
+					</h4>
+				</div>
+			</div>
+			<br>
+		{% endfor %}
 	</div>
+	<!--<div class="container eda">
+		{% include "_eda-block.html" %}
+	</div>-->
 {% include "footer.html" %}
 
