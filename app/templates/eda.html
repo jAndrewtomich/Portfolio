@@ -13,7 +13,19 @@
                 </div>
         </header>
 	<div class="container eda">
-		{% include "_eda-block.html" %}
+		{% for block in blocks %}
+			<div class="container">
+				<div class="row">
+					<h4>
+						{{ f = open('~/pythonic/Portfolio/project_data/eda/txts/txt1.txt'); r = f.read(); print(f); f.close(); }}
+					</h4>
+				</div>
+			</div>
+			<br>
+		{% endfor %}
 	</div>
+	<!--<div class="container eda">
+		{% include "_eda-block.html" %}
+	</div>-->
 {% include "footer.html" %}
 
