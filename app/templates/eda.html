@@ -1,5 +1,5 @@
 {% include "header.html" %}
-	<header class="masthead" style="...">
+	<header class="masthead" style="background-image: url('https://www.pngkey.com/png/full/343-3433435_facebook-imdb-icon.png')">
                 <div class="overlay"></div>
                 <div class="container">
                         <div class="row">
@@ -13,20 +13,42 @@
                 </div>
         </header>
 	<div class="container eda">
-		{% for block in blocks %}
-			<div class="container">
-				<div class="row">
-					<h4>
-						{{ block.text_block }}
-					</h4>
-					{{ block.iframes }}
+
+		<!-- TITLE DIV -->
+		<div class="row">
+			<h1>An Exploratory Data Analysis Using Combined Netflix and IMDb Data</h1>
+			<table>
+			    <tr>
+				<td>
+				    <img src="https://media.wearemotto.com/wp-content/uploads/2018/11/11001644/Netflix-Hero-Bingwatch.jpg">
+				</td>
+				<td>
+				    <p style="font-size:80px; font-weight:bold;">+</p>
+				</td>
+				<td>
+				    <img src="https://www.pngkey.com/png/full/343-3433435_facebook-imdb-icon.png" style="width:50%">
+				</td>
+			    </tr>
+			</table>
+		</div>
+		<!-- BODY DIVS -->
+		<div class="container">
+			{% for block in blocks %}
+				<div class="container">
+					<div class="row">
+						{% if block.text %}
+							<h4>
+								{{ block.text }}
+							</h4>
+						{% else %}
+							<iframe src="{{ block.source  }}" title="Jovian Viewer" height="{{ block.height }}" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto">
+							</iframe>
+						{% endif %}
+					</div>
 				</div>
-			</div>
-			<br>
-		{% endfor %}
+				<br>
+			{% endfor %}
+		</div>
 	</div>
-	<!--<div class="container eda">
-		{% include "_eda-block.html" %}
-	</div>-->
 {% include "footer.html" %}
 
