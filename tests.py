@@ -21,3 +21,20 @@ class EdaBlockCase(unittest.TestCase):
         db.session.remove()
         db.drop_all()
         self.app_context.pop()
+
+    def test_text(self):
+        # create project text
+        t1 = Eda(text="test text 1")
+        db.session.add(t1)
+        db.session.commit()
+
+    def test_iframe(self):
+        # create project iframe entry
+        f1 = Eda(source="https://jovian.ai/embed?url=https://jovian.ai/jandrewtomich/netflix-eda-feature-engineering-w-imdb-ratings/v/2&cellId=3", height="443")
+        db.session.add(f1)
+        db.session.commit()
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
+
