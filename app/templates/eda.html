@@ -46,7 +46,9 @@
 						{% endif %}
 					</div>
 				</div>
-				<br>
+				{% if block.source %}
+					<br>
+				{% endif %}
 			{% endfor %}
 		</div>
 	</div>
