@@ -34,3 +34,4 @@ app.db
 
 logs
 project_data
+.env_vars
