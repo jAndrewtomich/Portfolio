@@ -1,3 +1,4 @@
+#!~/anaconda3/envs/mega/bin/python
 from app import create_app, db
 from app.models import Eda
 
