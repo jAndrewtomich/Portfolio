@@ -36,3 +36,4 @@ logs
 project_data
 .env_vars
 db.script
+.static.bk
