@@ -1,12 +1,12 @@
 /* Project styles */
 
-:link {
+/*''':link {
 	color: #0000EE;
 }
 
 :visited {
 	color: #551A8B;
-}
+}'''*/
 
 /* EDA */
 
@@ -20,4 +20,11 @@
 	border-radius: 4px;
 	height: 50%;
 	width: 50%;
+}
+
+.eda-carousel-item > img {
+	max-width: 1000px;
+	max-height: auto;
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
