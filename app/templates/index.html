@@ -1,23 +1,23 @@
 {% include "header.html" %}
-	<header class="masthead" style="...">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-md-10 mx-auto">
-					<div class="site-heading">
-						<h1>Andrew's Site</h1>
-						<span class="subheading">A Digital Portfolio</span>
-					</div>
+<header class="masthead" style="...">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="site-heading">
+					<h1>Andrew's Site</h1>
+					<span class="subheading">A Digital Portfolio</span>
 				</div>
 			</div>
 		</div>
-	</header>
-	{% for _ in range(100) %}
-		<div class="container">
-			<div class="row">
-			</div>
-			<hr>
+	</div>
+</header>
+{% for _ in range(100) %}
+	<div class="container">
+		<div class="row">
 		</div>
-		<br>
-	{% endfor %}
+		<hr>
+	</div>
+	<br>
+{% endfor %}
 {% include "footer.html" %}
