@@ -41,7 +41,6 @@ dependencies:
     - flask-mail
     - flask-migrate
     - flask-moment
-    - python_abi
     - visitor
   - pytz
   - readline
