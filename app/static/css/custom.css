@@ -23,8 +23,7 @@
 }
 
 .eda-carousel-item > img {
-	max-width: 1000px;
-	max-height: auto;
 	border: 1px solid #ddd;
 	border-radius: 4px;
+	vertical-align: center;
 }
