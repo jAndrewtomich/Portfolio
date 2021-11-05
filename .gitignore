@@ -38,3 +38,4 @@ project_data
 db.script
 .static.bk
 .junk
+.conda_req.bk
