@@ -35,7 +35,6 @@ dependencies:
   - pycryptodome
   - pyjwt
   - python
-  - pip==21.3
   - pip:
     - dominate
     - flask-bootstrap
