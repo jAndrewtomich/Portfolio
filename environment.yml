@@ -1,4 +1,4 @@
-name: at-portfolio-app
+name: mega
 dependencies:
   - _libgcc_mutex
   - _openmp_mutex
