@@ -18,6 +18,7 @@ dependencies:
   - flask-wtf
   - gmp
   - greenlet
+  - gunicorn
   - idna
   - importlib-metadata
   - importlib_resources
