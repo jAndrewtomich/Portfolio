@@ -39,3 +39,4 @@ db.script
 .static.bk
 .junk
 .conda_req.bk
+idb.py
