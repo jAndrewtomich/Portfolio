@@ -33,6 +33,7 @@ dependencies:
   - markupsafe
   - ncurses
   - openssl
+  - psycopg-binary
   - pycryptodome
   - pyjwt
   - python
