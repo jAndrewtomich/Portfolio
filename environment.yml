@@ -33,7 +33,6 @@ dependencies:
   - markupsafe
   - ncurses
   - openssl
-  - psycopg2-binary
   - pycryptodome
   - pyjwt
   - python
@@ -44,6 +43,7 @@ dependencies:
     - flask-mail
     - flask-migrate
     - flask-moment
+    - psycopg2-binary
     - visitor
   - pytz
   - readline
