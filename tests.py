@@ -1,4 +1,4 @@
-#!/home/andrew/anaconda3/envs/mega/bin/python
+#!/home/andrew/anaconda3/envs/mega/bin/python 
 import unittest
 from app import create_app, db
 from app.models import Eda
