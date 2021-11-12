@@ -10,4 +10,3 @@ class Eda(db.Model):
 
     def __repr__(self):
         return "<Eda block #{}>".format(self.id)
-
