@@ -1,6 +1,6 @@
 {% include "header.html" %}
-<header class="masthead" style="...">
-	<div class="overlay"></div>
+<header class="masthead" style="background-image: url('https://www.concordia.ca/content/concordia/en/academics/graduate/software-engineering-meng.img.png/1627073750165.jpg')">
+	<div class="overlay" style="opacity: 75%"></div>
         <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
@@ -12,28 +12,49 @@
 		</div>
 	</div>
 </header>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-4 col-lg-4">
-			<div class="card" style="width: 18rem; background: #000;">
-				<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Netflix & IMDb EDA</h5>
-					<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
-					<a href="{{ url_for('main.eda') }}" class="btn btn-primary">View Project</a>
+<div class="container-fluid"> 
+	<div class="row" style="background: #0085CC">
+		<div class="col-md-1 col-lg-1"></div>
+		<div class="col-md-10 col-lg-10">
+			<div class="container-fluid" >
+				<div class="row">
+					<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+						<div class="card" style="width: 90%; background: #555;">
+							<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" alt="...">
+							<img src="{{ url_for('static', filename='img/nfdb2.png') }}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Netflix & IMDb EDA</h5>
+								<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
+								<a href="{{ url_for('main.eda') }}" class="btn btn-primary">View Project</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+						<div class="card" style="width: 90%; background: #555;">
+							<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Netflix & IMDb EDA</h5>
+								<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
+								<a href="{{ url_for('main.eda') }}" class="btn btn-primary">View Project</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+						<div class="card" style="width: 90%; background: #555;">
+							<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" alt="...">
+							<img src="{{ url_for('static', filename='img/nfdb2.png') }}" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Netflix & IMDb EDA</h5>
+								<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
+								<a href="{{ url_for('main.eda') }}" class="btn btn-primary">View Project</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4 col-lg-4">
-			<div class="card" style="width: 18rem; background: #000;">
-				<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Netflix & IMDb EDA</h5>
-					<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
-					<a href="{{ url_for('main.eda') }}" class="btn btn-primary">View Project</a>
-				</div>
-			</div>
-		</div>
+		<div class="col-md-1 col-lg-1"></div>
 	</div>
 </div>
 {% include "footer.html" %}
