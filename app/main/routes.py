@@ -16,6 +16,11 @@ def about():
     return render_template('about.html', title="About Andrew")
 
 
+@bp.route('/thoughts')
+def thoughts():
+    return render_template('thoughts.html', title="Andrew's Thoughts")
+
+
 @bp.route('/projects')
 def projects():
    return render_template("projects.html", title="Projects")
