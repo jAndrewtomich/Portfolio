@@ -30,3 +30,9 @@ def projects():
 def eda():
     blocks = Eda.query.all()
     return render_template('eda.html', blocks=blocks, title="Netflix and IMDb EDA")
+
+
+@bp.route('/flights')
+def flights():
+    return render_template('flights.html', title="Flight Notifications")
+
