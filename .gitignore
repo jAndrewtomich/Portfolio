@@ -40,3 +40,4 @@ db.script
 .junk
 .conda_req.bk
 idb.py
+.vscode
