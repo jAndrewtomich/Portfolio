@@ -34,7 +34,7 @@ app.db
 
 logs
 project_data
-.env_vars
+.flaskenv
 db.script
 .static.bk
 .junk
