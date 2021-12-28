@@ -28,8 +28,9 @@ def projects():
 
 @bp.route('/eda')
 def eda():
-    blocks = Eda.query.all()
-    return render_template('eda.html', blocks=blocks, title="Netflix and IMDb EDA")
+    #blocks = Eda.query.all()
+    #return render_template('eda.html', blocks=blocks, title="Netflix and IMDb EDA")
+    return render_template('eda.html', title="Netflix and IMDb EDA")
 
 
 @bp.route('/flights')
