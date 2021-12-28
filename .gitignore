@@ -41,3 +41,4 @@ db.script
 .conda_req.bk
 idb.py
 .vscode
+.venv

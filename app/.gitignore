@@ -31,4 +31,14 @@ nosetests.xml
 
 venv
 app.db
-portfolio.log*
+
+logs
+project_data
+.flaskenv
+db.script
+.static.bk
+.junk
+.conda_req.bk
+idb.py
+.vscode
+.venv
