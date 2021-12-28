@@ -1,7 +1,7 @@
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-from flask import Flask, current_app
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from config import Config
@@ -40,6 +40,3 @@ def create_app(config_class=Config):
         app.logger.info('Portfolio startup')
     
     return app
-
-
-from app import models
