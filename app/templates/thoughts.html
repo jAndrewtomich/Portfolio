@@ -1,15 +1,41 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
 {% include "header.html" %}
-<header class="masthead" style="background-image: url('static/img/houston1.png')">
-	<div class="overlay" style="opacity: 75%"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-md-10 mx-auto">
-				<div class="site-heading">
-					<h1>My Blog</h1>
-					<span class="subheading">A Collection of Lessons and Musings</span>
+	<header class="masthead" style="background-image: url('static/img/houston1.png')">
+		<div class="overlay" style="opacity: 75%"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-10 mx-auto">
+					<div class="site-heading">
+						<h1>My Blog</h1>
+						<span class="subheading">A Collection of Lessons and Musings</span>
+					</div>
 				</div>
 			</div>
 		</div>
-	 </div>
- </header>
+	</header>
+
+	{% for topic in topics %}
+		<div class="container">
+			<div class="card" style="color: black;">
+				<div class="card-body">
+					<h1>{{ topic.title }}</h1>
+					<h6 style="color: gray;">{{ topic.timestamp }}</h6>
+					<h4>{{ topic.content|safe }}</h4>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+	<br>
+	<br>
+	<hr>
+	<div class="container" style="color: black;">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				{{ ckeditor.load() }}
+				{{ ckeditor.config(name='body') }}
+				{{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+			</div>
+		</div>
+	</div>
 {% include "footer.html" %}
