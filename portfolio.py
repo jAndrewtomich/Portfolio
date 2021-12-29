@@ -1,8 +1,8 @@
 from app import create_app, db
-from app.models import Eda
+from app.models import Topic
 
 app = create_app()
 
 @app.shell_context_processor
 def make_shell_context():
-    return {'db': db, 'Eda': Eda}
+    return {'db': db, 'topic': Topic}
