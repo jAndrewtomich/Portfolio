@@ -1,4 +1,8 @@
-from flask import render_template
+from flask import render_template, redirect
+from flask.helpers import url_for
+from app.main.forms import CreateTopicForm
+from app import db
+from app.models import Topic
 from app.main import bp
 
 
@@ -13,9 +17,15 @@ def about():
     return render_template('about.html', title="About Andrew")
 
 
-@bp.route('/thoughts')
+@bp.route('/thoughts', methods=['GET', 'POST'])
 def thoughts():
-    return render_template('thoughts.html', title="Andrew's Thoughts")
+    form = CreateTopicForm()
+    if form.validate_on_submit():
+        db.session.add(Topic(title=form.title.data, content=form.content.data))
+        db.session.commit()
+        return redirect(url_for('main.thoughts'))
+    topics = Topic.query.all()
+    return render_template('thoughts.html', form=form, topics=topics, title="Andrew's Thoughts")
 
 
 @bp.route('/projects')
