@@ -1,13 +1,14 @@
-from flask import current_app
+from datetime import datetime
 from app import db
 
 
-class Eda(db.Model):
+class Topic(db.Model):
+    __tablename__ = 'topic'
+
     id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.String())
-    source = db.Column(db.String())
-    height = db.Column(db.String())
+    timestamp = db.Column(db.DateTime(), index=True, default=datetime.utcnow)
+    title = db.Column(db.String())
+    content = db.Column(db.String())
 
     def __repr__(self):
-        return "<Eda block #{}>".format(self.id)
-
+        return f'<id> {self.id}' 
