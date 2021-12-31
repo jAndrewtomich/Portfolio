@@ -1,7 +1,7 @@
 {% import "bootstrap/wtf.html" as wtf %}
 
 {% include "header.html" %}
-	<header class="masthead" style="background-image: url('static/img/houston1.png')">
+	<header class="masthead" style="background-image: url('../static/img/houston1.png')">
 		<div class="overlay" style="opacity: 75%"></div>
 		<div class="container">
 			<div class="row">
@@ -22,9 +22,11 @@
 					<h1>{{ topic.title }}</h1>
 					<h6 style="color: gray;">{{ topic.timestamp }}</h6>
 					<h4>{{ topic.content|safe }}</h4>
+					<a href="{{ url_for('main.thoughts', topic_id=topic.id) }}" class="btn btn-primary">edit</a>
 				</div>
 			</div>
 		</div>
+		<br>
 	{% endfor %}
 	<br>
 	<br>
