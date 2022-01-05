@@ -11,4 +11,5 @@ class Topic(db.Model):
     content = db.Column(db.String())
 
     def __repr__(self):
-        return f'<id> {self.id}' 
+        return f'<id> {self.id}'
+ 
