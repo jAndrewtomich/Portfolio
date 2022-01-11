@@ -63,6 +63,11 @@ def projects():
    return render_template("projects.html", title="Projects")
 
 
+@bp.route('/contact')
+def contact():
+    return render_template("contact.html", title="Contact")
+
+
 @bp.route('/eda')
 def eda():
     #blocks = Eda.query.all()
