@@ -12,4 +12,3 @@ class Topic(db.Model):
 
     def __repr__(self):
         return f'<id> {self.id}'
- 
