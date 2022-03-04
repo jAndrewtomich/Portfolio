@@ -4,18 +4,100 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-md-10 mx-auto">
-				<div class="site-heading">
-					<h1>Andrew's Site</h1>
-					<span class="subheading">Digital Portfolio of a Python Enthusiast and Data Junkie</span>
+				<div class="site-heading" id="top-of-page">
+					<h1>Andrew Tomich</h1>
+					<span class="subheading">Developing efficient software solutions for complex problems</span>
 				</div>
 			</div>
 		</div>
 	</div>
 </header>
-<!--<div id="like_button_container"></div>-->
-<div class="card" style="color: black;">
-	<div class="card-body">
-		<h2>Make yourself at home, have a look around, and drop me a message if you feel so inclined...</h2>
+<div class="container-fluid">
+	<div class="card" style="color: black;">
+		<div class="card-body" id="about-me">
+			<h1 class="section-title">About Me</h1>
+			<h5>I have a passion for clean code and data analysis.  I enjoy examining data, whether that be manually through Jupyter Notebook/Pandas, or through machine learning, utilizing PyTorch or Tensorflow</h5>
+			<h5>React-Bootstrap is a front-end framework that was designed keeping react in mind. We can use the following approach in ReactJS to use the react-bootstrap Container, Row, Col Component.
+
+			Container Component provides a way to center and horizontally pad the contents of our application. It is used when the user wants the responsive pixel width. 
+			Row Component provides a way to represent a row in the grid system. It is used when we want to display data in the form of rows.
+			Col Component provides a way to represent a column in the grid system. It is used when we want to display data in the form of columns
+			Container Props:
+
+			as: It can be used as a custom element type for this component.
+			fluid: It is used to allow the container to fill all of its horizontal space which is available.
+			bsPrefix: It is an escape hatch for working with strongly customized bootstrap CSS.
+			Row Props:
+
+			as: It can be used as a custom element type for this component.
+			lg: It is used to denote the number of columns which will fit next to each other on large devices having resolution ≥ 992 pixels.
+			md: It is used to denote the number of columns which will fit next to each other on medium devices having resolution ≥ 768 pixels.
+			sm: It is used to denote the number of columns which will fit next to each other on small devices having resolution ≥ 576 pixels.
+			xl: It is used to denote the number of columns which will fit next to each other on extra-large devices having resolution ≥ 1200 pixels.
+			xs: It is used to denote the number of columns which will fit next to each other on extra-small devices having resolution < 576 pixels.
+			noGutters: It is used to remove the gutter spacing between added negative margins and columns.
+			bsPrefix: It is an escape hatch for working with strongly customized bootstrap CSS.
+			Col Props:</h5>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="card" style="color: black;">
+		<div class="card-body" id="my-projects">
+			<h1 class="section-title">Projects</h1>
+			<div class="container-fluid"> 
+				<div class="row" style="background: #b3c6ff">
+					<div class="col-md-1 col-lg-1"></div>
+					<div class="col-md-10 col-lg-10">
+						<div class="container-fluid" >
+							<div class="row">
+								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+									<div class="card" style="width: 90%; background: #555;">
+										<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" style="height: 95px; width: 350px;" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Netflix & IMDb EDA</h5>
+											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
+											<a href="{{ url_for('main.eda') }}" class="btn btn-primary">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+									<div class="card" style="width: 90%; background: #555;">
+										<img src="{{ url_for('static', filename='img/flights1.png') }}" class="card-img-top" style="width: 350px; height: 150px" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Flight Notification System</h5>
+											<p class="card-text">A club-style web app with enrollment feature which notifies members when a flight is available which meets their specifications.  Utilizes KIWI Travel API with Google Flights to access flight info, Sheety API to store user information, and Twilio API to notify members via SMS.  Email notifications are also sent via SMTP.</p>
+											<a href="{{ url_for('main.flights') }}" class="btn btn-primary">View Project</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+									<div class="card" style="width: 90%; background: #555;">
+										<img src="{{ url_for('static', filename='img/HN1.png') }}" class="card-img-top" style="max-width: 200px;" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Hacker News Summarizer</h5>
+											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
+											<a href="{{ url_for('main.hn') }}" class="btn btn-primary">View Project</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1 col-lg-1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="card" style="color: black;">
+		<div class="card-body" id="contact-me">
+			<h1 class="section-title">Contact Info</h1>
+			<h3>Email: </h3><h4>johnatomich@gmail.com</h4>
+			<h3>Github: </h3><h4>https://github.com/jAndrewtomich</h4>
+		</div>
 	</div>
 </div>
 {% include "footer.html" %}
