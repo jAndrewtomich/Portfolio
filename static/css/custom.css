@@ -5,6 +5,12 @@
 	text-transform: uppercase;
 }
 
+.section-card {
+	border-style: ridge;
+	border-width: .5rem;
+	border-radius: .95rem;
+}
+
 /* EDA */
 
 .eda {
