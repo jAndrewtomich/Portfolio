@@ -48,14 +48,14 @@
 		<div class="card-body" id="my-projects">
 			<h1 class="section-title">Projects</h1>
 			<div class="container-fluid"> 
-				<div class="row" style="background: #b3c6ff">
+				<div class="row" style="background: #b3c6ff; padding: 1em 0em;">
 					<div class="col-md-1 col-lg-1"></div>
 					<div class="col-md-10 col-lg-10">
-						<div class="container-fluid" >
+						<div class="container-fluid">
 							<div class="row">
 								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
 									<div class="card" style="width: 90%; background: #555;">
-										<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" style="height: 95px; width: 350px;" alt="...">
+										<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" style="max-inline-size: 100em;" alt="...">
 										<div class="card-body">
 											<h5 class="card-title">Netflix & IMDb EDA</h5>
 											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
@@ -65,17 +65,17 @@
 								</div>
 								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
 									<div class="card" style="width: 90%; background: #555;">
-										<img src="{{ url_for('static', filename='img/flights1.png') }}" class="card-img-top" style="width: 350px; height: 150px" alt="...">
+										<img src="{{ url_for('static', filename='img/flights1.png') }}" class="card-img-top" style="max-inline-size: 100em;" alt="...">
 										<div class="card-body">
-											<h5 class="card-title">Flight Notification System</h5>
-											<p class="card-text">A club-style web app with enrollment feature which notifies members when a flight is available which meets their specifications.  Utilizes KIWI Travel API with Google Flights to access flight info, Sheety API to store user information, and Twilio API to notify members via SMS.  Email notifications are also sent via SMTP.</p>
-											<a href="{{ url_for('flights') }}" class="btn btn-primary">View Project</a>
+											<h5 class="card-title">Natural Language Processing</h5>
+											<p class="card-text">An in depth examination of text taken from interview responses.  Beginning with lemmatization and tokenization, a thorough analysis is performed using the Nltk module for Python.</p>
+											<a href="{{ url_for('nlp') }}" class="btn btn-primary">View Project</a>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
 									<div class="card" style="width: 90%; background: #555;">
-										<img src="{{ url_for('static', filename='img/HN1.png') }}" class="card-img-top" style="max-width: 200px;" alt="...">
+										<img src="{{ url_for('static', filename='img/HN1.png') }}" class="card-img-top" style="max-inline-size: 10em;" alt="...">
 										<div class="card-body">
 											<h5 class="card-title">Hacker News Summarizer</h5>
 											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>

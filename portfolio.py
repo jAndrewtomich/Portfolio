@@ -15,9 +15,9 @@ def index():
 def eda():
     return render_template('eda.html', title="Netflix and IMDb EDA")
 
-@app.route('/flights')
-def flights():
-    return render_template('flights.html', title="Flight Notifications")
+@app.route('/nlp')
+def nlp():
+    return render_template('nlp.html', title="Flight Notifications")
 
 
 @app.route('/hn')
