@@ -17,7 +17,7 @@ def eda():
 
 @app.route('/nlp')
 def nlp():
-    return render_template('nlp.html', title="Flight Notifications")
+    return render_template('nlp.html', title="NLP")
 
 
 @app.route('/hn')

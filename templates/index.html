@@ -1,5 +1,5 @@
 {% include "header.html" %}
-<header class="masthead" style="background-image: url('static/img/houston1.png')">
+<header class="masthead" style="background-image: url('static/img/houston1.png');">
 	<div class="overlay" style="opacity: 75%"></div>
 	<div class="container">
 		<div class="row">
@@ -16,28 +16,9 @@
 	<div class="card section-card" style="color: black;">
 		<div class="card-body" id="about-me">
 			<h1 class="section-title">About Me</h1>
-			<h5>I have a passion for clean code and data analysis.  I enjoy examining data, whether that be manually through Jupyter Notebook/Pandas, or through machine learning, utilizing PyTorch or Tensorflow</h5>
-			<h5>React-Bootstrap is a front-end framework that was designed keeping react in mind. We can use the following approach in ReactJS to use the react-bootstrap Container, Row, Col Component.
-
-			Container Component provides a way to center and horizontally pad the contents of our application. It is used when the user wants the responsive pixel width. 
-			Row Component provides a way to represent a row in the grid system. It is used when we want to display data in the form of rows.
-			Col Component provides a way to represent a column in the grid system. It is used when we want to display data in the form of columns
-			Container Props:
-
-			as: It can be used as a custom element type for this component.
-			fluid: It is used to allow the container to fill all of its horizontal space which is available.
-			bsPrefix: It is an escape hatch for working with strongly customized bootstrap CSS.
-			Row Props:
-
-			as: It can be used as a custom element type for this component.
-			lg: It is used to denote the number of columns which will fit next to each other on large devices having resolution ≥ 992 pixels.
-			md: It is used to denote the number of columns which will fit next to each other on medium devices having resolution ≥ 768 pixels.
-			sm: It is used to denote the number of columns which will fit next to each other on small devices having resolution ≥ 576 pixels.
-			xl: It is used to denote the number of columns which will fit next to each other on extra-large devices having resolution ≥ 1200 pixels.
-			xs: It is used to denote the number of columns which will fit next to each other on extra-small devices having resolution < 576 pixels.
-			noGutters: It is used to remove the gutter spacing between added negative margins and columns.
-			bsPrefix: It is an escape hatch for working with strongly customized bootstrap CSS.
-			Col Props:</h5>
+			<h5>I have a passion for clean code and data analysis.  I enjoy examining data, whether that be manually through Jupyter Notebook/Pandas, or through machine learning, utilizing PyTorch or Tensorflow.  D3.js is a new favorite tool of mine; there aren't many things more satisfying than watching your data come to life in an eye catching graph.</h5>
+			<br>
+			<h5>I also enjoy data structures and algorithms and have experience with object oriented programming in C++ and Java.</h5>
 		</div>
 	</div>
 </div>
@@ -48,7 +29,7 @@
 		<div class="card-body" id="my-projects">
 			<h1 class="section-title">Projects</h1>
 			<div class="container-fluid"> 
-				<div class="row" style="background: #b3c6ff; padding: 1em 0em;">
+				<div class="row" style="color: white; background: #b3c6ff; padding: 1em 0em; border-radius: 1rem;">
 					<div class="col-md-1 col-lg-1"></div>
 					<div class="col-md-10 col-lg-10">
 						<div class="container-fluid">
@@ -58,14 +39,14 @@
 										<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" style="max-inline-size: 100em;" alt="...">
 										<div class="card-body">
 											<h5 class="card-title">Netflix & IMDb EDA</h5>
-											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
+											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb using Python visualization in a Jupyter Notebook environment.</p>
 											<a href="{{ url_for('eda') }}" class="btn btn-primary">View Project</a>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
 									<div class="card" style="width: 90%; background: #555;">
-										<img src="{{ url_for('static', filename='img/flights1.png') }}" class="card-img-top" style="max-inline-size: 100em;" alt="...">
+										<img src="{{ url_for('static', filename='img/NLP.jpg') }}" class="card-img-top" style="max-height: 10em; max-inline-size: 100em;" alt="...">
 										<div class="card-body">
 											<h5 class="card-title">Natural Language Processing</h5>
 											<p class="card-text">An in depth examination of text taken from interview responses.  Beginning with lemmatization and tokenization, a thorough analysis is performed using the Nltk module for Python.</p>
@@ -75,9 +56,9 @@
 								</div>
 								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
 									<div class="card" style="width: 90%; background: #555;">
-										<img src="{{ url_for('static', filename='img/HN1.png') }}" class="card-img-top" style="max-inline-size: 10em;" alt="...">
+										<img src="{{ url_for('static', filename='img/download.png') }}" class="card-img-top" style="max-inline-size: 12em;" alt="...">
 										<div class="card-body">
-											<h5 class="card-title">Hacker News Summarizer</h5>
+											<h5 class="card-title">Identifying Images with Neural Networks</h5>
 											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb</p>
 											<a href="{{ url_for('hn') }}" class="btn btn-primary">View Project</a>
 										</div>
