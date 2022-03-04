@@ -1,5 +1,4 @@
 from flask import render_template, redirect
-from flask.helpers import url_for
 from app.main.forms import CreateTopicForm
 from app.main import bp
 
