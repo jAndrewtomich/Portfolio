@@ -1,5 +1,9 @@
 /* Project styles */
-
+/* classes */
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
 
 /* EDA */
 
