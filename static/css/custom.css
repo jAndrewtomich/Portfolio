@@ -1,0 +1,28 @@
+/* Project styles */
+/* classes */
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration:underline;
+}
+
+.section-card {
+	border-style: ridge;
+	border-width: .25rem;
+	border-radius: .95rem;
+}
+
+/* EDA */
+
+.eda {
+	color: black;
+	margin-top: 3.5em;
+}
+
+.eda img {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	height: 50%;
+	width: 50%;
+}
+

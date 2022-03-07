@@ -1,8 +1,25 @@
-from app import create_app, db
-from app.models import Topic
+from flask import Flask, render_template
+from flask_bootstrap import Bootstrap
+from config import Config
 
-app = create_app()
+app = Flask(__name__)
+Bootstrap(app)
+app.config.from_object(Config)
 
-@app.shell_context_processor
-def make_shell_context():
-    return {'db': db, 'topic': Topic}
+@app.route('/')
+@app.route('/index')
+def index():
+    return render_template('index.html', title="Andrew's Page")
+
+@app.route('/eda')
+def eda():
+    return render_template('eda.html', title="Netflix and IMDb EDA")
+
+@app.route('/nlp')
+def nlp():
+    return render_template('nlp.html', title="NLP")
+
+
+@app.route('/hn')
+def hn():
+    return render_template('hackernews.html', title="News Summarization")

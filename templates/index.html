@@ -1,0 +1,141 @@
+{% include "header.html" %}
+<header class="masthead" style="background-image: url('static/img/houston1.png');">
+	<div class="overlay" style="opacity: 75%"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="site-heading" id="top-of-page">
+					<h1>Andrew Tomich</h1>
+					<span class="subheading">Developing efficient software solutions for complex problems</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="container-fluid">
+	<div class="card section-card" style="color: black;">
+		<div class="card-body" id="about-me">
+			<h1 class="section-title">About Me</h1>
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-2"></div>
+				<div class="col-sm-8 col-md-8 col-lg-8" style="text-align: justify;">
+					<h5>Meticulous and focused software engineer with extensive Python experience and strong Linux skills.  Enthusiastic collaborator and leader capable of consistently generating solutions through strong analytical and problem-solving skills and a genuine respect for teamwork.</h5>
+						<p>I have a passion for clean code and data analysis.  I enjoy examining data, whether that be manually through Jupyter Notebook/Pandas, or through machine learning utilizing PyTorch or Tensorflow.  D3.js is a new favorite tool of mine; there aren't many things more satisfying than watching your data come to life in an eye catching graph.
+						<br>
+						I also enjoy data structures and algorithms and have experience with object oriented programming in C++ and Java.</p>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-1"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="card section-card" style="color: black;">
+		<div class="card-body" id="my-projects">
+			<h1 class="section-title">Projects</h1>
+			<div class="container-fluid"> 
+				<div class="row" style="color: white; background: #b3c6ff; padding: 1em 0em; border-radius: 1rem;">
+					<div class="col-md-1 col-lg-1"></div>
+					<div class="col-md-10 col-lg-10">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+									<div class="card" style="width: 90%; background: #555;">
+										<img src="{{ url_for('static', filename='img/nfdb1.png') }}" class="card-img-top" style="height: 6em; max-width: 100em;" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Netflix & IMDb EDA</h5>
+											<p class="card-text">An exploratory data analysis of Netflix data combined with user ratings from IMDb using Python visualization in a Jupyter Notebook environment.</p>
+											<a href="{{ url_for('eda') }}" class="btn btn-primary">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+									<div class="card" style="width: 90%; background: #555;">
+										<img src="{{ url_for('static', filename='img/NLP.jpg') }}" class="card-img-top" style="max-height: 10em; max-inline-size: 100em;" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Natural Language Processing</h5>
+											<p class="card-text">An in depth examination of text taken from interview responses.  Beginning with lemmatization and tokenization, a thorough analysis is performed using the Nltk module for Python.</p>
+											<a href="{{ url_for('nlp') }}" class="btn btn-primary">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-lg-4 d-flex flex-column align-items-center">
+									<div class="card" style="width: 90%; background: #555;">
+										<img src="{{ url_for('static', filename='img/download.png') }}" class="card-img-top" style="max-width: 100em; max-height: 12em;" alt="...">
+										<div class="card-body">
+											<h5 class="card-title">Identifying Images with Neural Networks</h5>
+											<p class="card-text">Training a Convolutional Neural Network on visual data in order to identify leaf disease in Cassava plants.</p>
+											<a href="{{ url_for('hn') }}" class="btn btn-primary">View Project</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1 col-lg-1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+	<div class="row" style="color: black;">
+		<div class="col-sm-3 col-md-3 col-md-3"></div>
+		<div class="col-sm-3 col-md-3 col-lg-3" style="text-align: right;">
+			<a href="https://www.github.com/jAndrewtomich/" target="_blank"><i class="fab fa-github-square" style="font-size: 48px;"></i></a>
+		</div>
+		<div class="col-sm-3 col-md-3 col-lg-3" style="text-align: left;">
+			<a href="https://www.linkedin.com/in/andrew-tomich/" target="_blank"><i class="fab fa-linkedin" style="font-size: 48px;"></i></a>
+		</div>
+		<div class="col-sm-3 col-md-3 col-lg-3"></div>
+	</div>
+</div>
+<!--
+<div class="container-fluid">
+	<div class="card section-card" style="color: black;">
+		<div class="card-body" id="my-info">
+			<h1 class="section-title">Info</h1>
+			<div class="container-fluid">
+				<div class="row" style="background: #b3c6ff; padding: 1rem 0; border-radius: 1rem;">
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="section-title">Email:</h3>
+								<br>
+								<h4>johnatomich@gmail.com</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="section-title">Github:</h3>
+								<br>
+								<i class="fab fa-github" style="font-size: 48px;"></i>
+								<h4><a href="https://www.github.com/jAndrewtomich" target="_blank">jAndrewtomich</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<div class="card">
+							<div class="card-body">
+								<h3 class="section-title">LinkedIn:</h3>
+								<br>
+								<h4><a href="https://www.linkedin.com/in/andrew-tomich/" target="_blank">Andrew Tomich</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+-->
+{% include "footer.html" %}
+
+
+
