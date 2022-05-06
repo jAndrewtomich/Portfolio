@@ -48,3 +48,4 @@ package-lock.json
 package.json
 models.py
 about.html
+.env
