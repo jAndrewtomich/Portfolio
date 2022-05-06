@@ -19,6 +19,9 @@ def eda():
 def nlp():
     return render_template('nlp.html', title="NLP")
 
+@app.route('/walrus')
+def walrus():
+    return render_template('walrus1.slides.html', title="Walrus")
 
 @app.route('/hn')
 def hn():
