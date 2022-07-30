@@ -13,7 +13,7 @@ def index():
 
 @app.route('/eda')
 def eda():
-    return render_template('eda.html', title="Netflix and IMDb EDA")
+    return render_template('netflix.slides.html', title="Netflix and IMDb EDA")
 
 @app.route('/nlp')
 def nlp():
@@ -22,6 +22,10 @@ def nlp():
 @app.route('/walrus')
 def walrus():
     return render_template('walrus1.slides.html', title="Walrus")
+
+@app.route('/personas')
+def personas():
+    return render_template('rhi.slides.html', title='Patching')
 
 @app.route('/hn')
 def hn():
